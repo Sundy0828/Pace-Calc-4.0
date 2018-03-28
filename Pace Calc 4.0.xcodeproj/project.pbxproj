@@ -12,6 +12,11 @@
 		A3732A2D2054E36800162334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3732A2B2054E36800162334 /* Main.storyboard */; };
 		A3732A2F2054E36800162334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3732A2E2054E36800162334 /* Assets.xcassets */; };
 		A3732A322054E36800162334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3732A302054E36800162334 /* LaunchScreen.storyboard */; };
+		A3732A3A2054F9A000162334 /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A392054F9A000162334 /* SplitController.swift */; };
+		A3732A3C2054F9AF00162334 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A3B2054F9AF00162334 /* SettingsController.swift */; };
+		A3732A3E2054FE8C00162334 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A3D2054FE8C00162334 /* CustomTableViewCell.swift */; };
+		A3732A402054FF5F00162334 /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A3F2054FF5F00162334 /* SharedFunctions.swift */; };
+		A3732A422055342A00162334 /* LapDistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A412055342A00162334 /* LapDistController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A3732A2E2054E36800162334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3732A312054E36800162334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3732A332054E36800162334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3732A392054F9A000162334 /* SplitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
+		A3732A3B2054F9AF00162334 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		A3732A3D2054FE8C00162334 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A3732A3F2054FF5F00162334 /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
+		A3732A412055342A00162334 /* LapDistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapDistController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				A3732A272054E36800162334 /* AppDelegate.swift */,
 				A3732A292054E36800162334 /* ViewController.swift */,
+				A3732A3F2054FF5F00162334 /* SharedFunctions.swift */,
+				A3732A392054F9A000162334 /* SplitController.swift */,
+				A3732A3B2054F9AF00162334 /* SettingsController.swift */,
+				A3732A412055342A00162334 /* LapDistController.swift */,
 				A3732A2B2054E36800162334 /* Main.storyboard */,
 				A3732A2E2054E36800162334 /* Assets.xcassets */,
 				A3732A302054E36800162334 /* LaunchScreen.storyboard */,
 				A3732A332054E36800162334 /* Info.plist */,
+				A3732A3D2054FE8C00162334 /* CustomTableViewCell.swift */,
 			);
 			path = "Pace Calc 4.0";
 			sourceTree = "<group>";
@@ -136,6 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3732A3C2054F9AF00162334 /* SettingsController.swift in Sources */,
+				A3732A422055342A00162334 /* LapDistController.swift in Sources */,
+				A3732A3E2054FE8C00162334 /* CustomTableViewCell.swift in Sources */,
+				A3732A402054FF5F00162334 /* SharedFunctions.swift in Sources */,
+				A3732A3A2054F9A000162334 /* SplitController.swift in Sources */,
 				A3732A2A2054E36800162334 /* ViewController.swift in Sources */,
 				A3732A282054E36800162334 /* AppDelegate.swift in Sources */,
 			);
