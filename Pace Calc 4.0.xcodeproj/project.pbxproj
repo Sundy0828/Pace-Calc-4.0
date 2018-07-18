@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36A4B9C20F6FC92008BF40A /* ClockSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A4B9B20F6FC92008BF40A /* ClockSplitController.swift */; };
+		A36A4B9E20F6FE94008BF40A /* CustomClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36A4B9D20F6FE94008BF40A /* CustomClockTableViewCell.swift */; };
 		A3732A282054E36800162334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A272054E36800162334 /* AppDelegate.swift */; };
 		A3732A2A2054E36800162334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732A292054E36800162334 /* ViewController.swift */; };
 		A3732A2D2054E36800162334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3732A2B2054E36800162334 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A36A4B9B20F6FC92008BF40A /* ClockSplitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSplitController.swift; sourceTree = "<group>"; };
+		A36A4B9D20F6FE94008BF40A /* CustomClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClockTableViewCell.swift; sourceTree = "<group>"; };
 		A3732A242054E36800162334 /* Pace Calc 4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pace Calc 4.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3732A272054E36800162334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3732A292054E36800162334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 				A3732A292054E36800162334 /* ViewController.swift */,
 				A3732A3F2054FF5F00162334 /* SharedFunctions.swift */,
 				A3732A392054F9A000162334 /* SplitController.swift */,
+				A36A4B9B20F6FC92008BF40A /* ClockSplitController.swift */,
 				A3732A3B2054F9AF00162334 /* SettingsController.swift */,
 				A3732A412055342A00162334 /* LapDistController.swift */,
 				A3732A2B2054E36800162334 /* Main.storyboard */,
@@ -75,6 +80,7 @@
 				A3732A302054E36800162334 /* LaunchScreen.storyboard */,
 				A3732A332054E36800162334 /* Info.plist */,
 				A3732A3D2054FE8C00162334 /* CustomTableViewCell.swift */,
+				A36A4B9D20F6FE94008BF40A /* CustomClockTableViewCell.swift */,
 			);
 			path = "Pace Calc 4.0";
 			sourceTree = "<group>";
@@ -106,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jerrod Sunderland";
 				TargetAttributes = {
 					A3732A232054E36800162334 = {
@@ -152,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3732A3C2054F9AF00162334 /* SettingsController.swift in Sources */,
+				A36A4B9C20F6FC92008BF40A /* ClockSplitController.swift in Sources */,
+				A36A4B9E20F6FE94008BF40A /* CustomClockTableViewCell.swift in Sources */,
 				A3732A422055342A00162334 /* LapDistController.swift in Sources */,
 				A3732A3E2054FE8C00162334 /* CustomTableViewCell.swift in Sources */,
 				A3732A402054FF5F00162334 /* SharedFunctions.swift in Sources */,
@@ -197,6 +205,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -204,6 +213,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -254,6 +264,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -261,6 +272,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

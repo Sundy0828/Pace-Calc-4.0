@@ -1,13 +1,15 @@
 //
-//  SplitController.swift
+//  ClockSplitController.swift
 //  Pace Calc 4.0
 //
-//  Created by Jerrod on 3/11/18.
+//  Created by Jerrod on 7/11/18.
 //  Copyright © 2018 Jerrod Sunderland. All rights reserved.
 //
 
+import Foundation
 import UIKit
-class SplitController: UITableViewController {
+
+class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // set base values for distance, distance in meeters, default lap split value, stepper value, and lap num
     let distance = GlobalVariable.distanceW + "." + GlobalVariable.distanceD1 + GlobalVariable.distanceD2
@@ -20,6 +22,8 @@ class SplitController: UITableViewController {
     var lapArr : [String] = []
     var timeArr : [String] = []
     var comboArr = ""
+    
+    @IBOutlet var tableView: UITableView!
     
     let sharedFunc = SharedFunctions()
     
@@ -60,7 +64,7 @@ class SplitController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated) // No need for semicolon
         changeTheme()
-        self.navigationController?.navigationBar.topItem?.title = "Lap Split"
+        self.navigationController?.navigationBar.topItem?.title = "Clock Lap Split"
         
         // set tables items to self
         tableView.delegate = self
@@ -79,7 +83,7 @@ class SplitController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "Lap Split"
+        self.navigationController?.navigationBar.topItem?.title = "Clock Lap Split"
         changeTheme()
         
         // set tables items to self
@@ -163,29 +167,36 @@ class SplitController: UITableViewController {
         }
     }
     // set labels in table view
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "splitCell") as! CustomTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "clockSplitCell") as! CustomClockTableViewCell
         if GlobalVariable.theme == "dark" {
+            tableView.backgroundColor = UIColor.darkGray
             cell.backgroundColor = UIColor.darkGray
             cell.lapLbl.textColor = UIColor.white
             cell.timeLbl.textColor = UIColor.white
+            cell.diffTimeLbl.textColor = UIColor.white
         }else {
+            tableView.backgroundColor = UIColor.white
             cell.backgroundColor = UIColor.white
             cell.lapLbl.textColor = UIColor.black
             cell.timeLbl.textColor = UIColor.black
+            cell.diffTimeLbl.textColor = UIColor.black
         }
-        let sizeB = CGFloat(Int(20/375*width))
+        let sizeB = CGFloat(Int(17/375*width))
         let bigFont = UIFont(name: "AvenirNext-Bold", size: sizeB)
+        let bigFont2 = UIFont(name: "AvenirNext-DemiBold", size: sizeB)
         
         cell.lapLbl.text = lapArr[indexPath.row]
         cell.timeLbl.text = timeArr[indexPath.row]
+        cell.diffTimeLbl.text = timeArr[indexPath.row]
         
         cell.lapLbl.font = bigFont
-        cell.timeLbl.font = bigFont
+        cell.timeLbl.font = bigFont2
+        cell.diffTimeLbl.font = bigFont2
         return cell
     }
     // set number of rows in table
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Int(lapNum.rounded(.up))
     }
     // alert function
@@ -206,3 +217,4 @@ class SplitController: UITableViewController {
         }
     }
 }
+

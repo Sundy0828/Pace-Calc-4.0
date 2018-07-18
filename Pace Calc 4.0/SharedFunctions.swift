@@ -149,7 +149,7 @@ class SharedFunctions: NSObject {
     }
     //calculate total pace in seconds
     func getPace() -> Double {
-        var paceTime: Double = (Double(GlobalVariable.hourP)! * 3600) + (Double(GlobalVariable.minuteP)! * 60) + (Double(GlobalVariable.secondP)!)
+        let paceTime: Double = (Double(GlobalVariable.hourP)! * 3600) + (Double(GlobalVariable.minuteP)! * 60) + (Double(GlobalVariable.secondP)!)
         //if at least one value is not null then convert pace to time in seconds
         if (GlobalVariable.hourP != "" || GlobalVariable.minuteP != "" || GlobalVariable.secondP != "") {
             if (GlobalVariable.paceDistChoice == GlobalVariable.distChoice) {
