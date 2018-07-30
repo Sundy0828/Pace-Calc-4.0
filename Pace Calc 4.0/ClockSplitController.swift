@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
     // set base values for distance, distance in meeters, default lap split value, stepper value, and lap num
     let distance = GlobalVariable.distanceW + "." + GlobalVariable.distanceD1 + GlobalVariable.distanceD2
     var distanceM : Double = 0.0
@@ -21,9 +20,20 @@ class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDa
     // arrays for table
     var lapArr : [String] = []
     var timeArr : [String] = []
+    var lapTimeArr : [String] = []
     var comboArr = ""
     
+    // Timer variables
+    var stopWatch = Timer()
+    var currentTime = 0
+    var isRunning = true
+    
     @IBOutlet var tableView: UITableView!
+    
+    // timer outlets
+    @IBOutlet weak var timerLbl: UILabel!
+    @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var lapBtn: UIButton!
     
     let sharedFunc = SharedFunctions()
     
@@ -36,14 +46,35 @@ class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDa
         comboArr.removeAll()
         if (!arrayTwo.isEmpty && !arrayOne.isEmpty) {
             // for every value in arrays which are equal in length add them to a string
-            for i in 0...arrayOne.count - 1 {
+            var totRow = 0
+            if lapTimeArr.count > arrayOne.count {
+                totRow = lapTimeArr.count
+            }else {
+                totRow = arrayOne.count
+            }
+            for i in 0...totRow - 1 {
+                
+                var itemOne = ""
+                var itemTwo = ""
+                var itemThree = ""
+                
+                if lapTimeArr.count <= i {
+                    itemOne = lapTimeArr[i]
+                }
+                if arrayOne.count <= i {
+                    itemTwo = arrayOne[i]
+                }
+                if arrayTwo.count <= i {
+                    itemThree = arrayTwo[i]
+                }
+                
                 // determine if its on the last one
-                if i != arrayOne.count - 1 {
+                if i != totRow - 1 {
                     // string + lap # (distance) + some spaces + lap time + new line
-                    comboArr = comboArr + arrayOne[i] + "  " + arrayTwo[i] + "\n"
+                    comboArr = itemOne + " " + itemTwo + "  " + itemThree + "\n"
                 }else {
                     // string + lap # (distance) + some spaces + lap time but no new line for last one
-                    comboArr = comboArr + arrayOne[i] + "  " + arrayTwo[i]
+                    comboArr = itemOne + " " + itemTwo + "  " + itemThree
                 }
             }
         }
@@ -103,6 +134,58 @@ class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    
+    @IBAction func startPressed(_ sender: Any) {
+        if (isRunning) {
+            stopWatch = Timer.scheduledTimer(timeInterval: 0.00000001, target: self, selector: (#selector(ClockSplitController.UpdateTime)), userInfo: nil, repeats: true)
+            isRunning = !isRunning
+            startBtn.setTitle("Stop", for: .normal)
+            lapBtn.setTitle("Lap", for: .normal)
+        }else {
+            stopWatch.invalidate()
+            isRunning = !isRunning
+            startBtn.setTitle("Start", for: .normal)
+            lapBtn.setTitle("Reset", for: .normal)
+        }
+    }
+    @IBAction func lapPressed(_ sender: Any) {
+        if lapBtn.titleLabel?.text != "Reset" {
+            lapTimeArr.append(getLapTime())
+        }else {
+            var hold : [String] = []
+            for i in 0...lapArr.count {
+                hold.append("00:00:00.0")
+            }
+            lapTimeArr = hold
+            timerLbl.text = "00:00:00.0"
+        }
+        tableView.reloadData()
+        
+    }
+    @objc func UpdateTime() {
+        currentTime += 1
+        
+        timerLbl.text = getLapTime()
+    }
+    
+    func addZero(value : Int) -> String {
+        var zero = ""
+        if value < 10 {
+            zero = "0"
+        }
+        return zero + "\(value)"
+    }
+    
+    func getLapTime() -> String {
+        let mili = currentTime % 10
+        let sec = currentTime / 10 % 60
+        let min = (currentTime / 10 / 60) % 60
+        let hour = (currentTime / 10 / 3600)
+        
+        return "\(addZero(value: hour)):\(addZero(value: min)):\(addZero(value: sec)).\(mili)"
+    }
+    
+    
     func lapSplit() {
         // set label for lap distance
         // if distance if more than 0 and more than lap distance then find number of laps
@@ -115,6 +198,8 @@ class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDa
         setTable()
         self.tableView.reloadData()
     }
+    
+    
     
     // sets values for UITable
     func setTable() {
@@ -183,22 +268,30 @@ class ClockSplitController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.diffTimeLbl.textColor = UIColor.black
         }
         let sizeB = CGFloat(Int(17/375*width))
-        let bigFont = UIFont(name: "AvenirNext-Bold", size: sizeB)
-        let bigFont2 = UIFont(name: "AvenirNext-DemiBold", size: sizeB)
+        let bigFont = UIFont(name: "AvenirNext-Regular", size: sizeB)
         
-        cell.lapLbl.text = lapArr[indexPath.row]
-        cell.timeLbl.text = timeArr[indexPath.row]
-        cell.diffTimeLbl.text = timeArr[indexPath.row]
+        if lapArr.count > indexPath.row {
+            cell.lapLbl.text = lapArr[indexPath.row]
+        }
+        if lapTimeArr.count > indexPath.row {
+            cell.timeLbl.text = lapTimeArr[indexPath.row]
+        }
+        if timeArr.count > indexPath.row {
+            cell.diffTimeLbl.text = timeArr[indexPath.row]
+        }
         
         cell.lapLbl.font = bigFont
-        cell.timeLbl.font = bigFont2
-        cell.diffTimeLbl.font = bigFont2
+        cell.timeLbl.font = bigFont
+        cell.diffTimeLbl.font = bigFont
         return cell
     }
     // set number of rows in table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Int(lapNum.rounded(.up))
     }
+    
+    
+    
     // alert function
     func alert(message: String, title: String = "Error") {
         //calls alert controller with tital and message

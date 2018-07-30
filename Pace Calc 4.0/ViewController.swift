@@ -294,9 +294,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         bigView = 200/667*height
         smallView = 110/667*height
         let sizeB = CGFloat(Int(33/375*width))
-        let sizeS = CGFloat(Int(16/375*width))
-        var bigFont = UIFont(name: "AvenirNext-Bold", size: sizeB)
-        var smallFont = UIFont(name: "AvenirNext-Bold", size: sizeS)
+        let sizeS = CGFloat(Int(19/375*width))
+        let bigFont = UIFont(name: "AvenirNext-Regular", size: sizeB)
+        let smallFont = UIFont(name: "AvenirNext-Regular", size: sizeS)
         
         let bigText = "Click to Edit "
         let smallText = "Calculate "

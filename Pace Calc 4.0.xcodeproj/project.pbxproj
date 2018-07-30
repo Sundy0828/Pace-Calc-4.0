@@ -54,6 +54,7 @@
 			children = (
 				A3732A262054E36800162334 /* Pace Calc 4.0 */,
 				A3732A252054E36800162334 /* Products */,
+				A4219AB1210EAA8C00804C3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,13 @@
 			path = "Pace Calc 4.0";
 			sourceTree = "<group>";
 		};
+		A4219AB1210EAA8C00804C3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +103,7 @@
 				A3732A202054E36800162334 /* Sources */,
 				A3732A212054E36800162334 /* Frameworks */,
 				A3732A222054E36800162334 /* Resources */,
+				A4219A92210E639300804C3A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,11 +161,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4219A92210E639300804C3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3732A202054E36800162334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3732A282054E36800162334 /* AppDelegate.swift in Sources */,
 				A3732A3C2054F9AF00162334 /* SettingsController.swift in Sources */,
 				A36A4B9C20F6FC92008BF40A /* ClockSplitController.swift in Sources */,
 				A36A4B9E20F6FE94008BF40A /* CustomClockTableViewCell.swift in Sources */,
@@ -165,7 +191,6 @@
 				A3732A402054FF5F00162334 /* SharedFunctions.swift in Sources */,
 				A3732A3A2054F9A000162334 /* SplitController.swift in Sources */,
 				A3732A2A2054E36800162334 /* ViewController.swift in Sources */,
-				A3732A282054E36800162334 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

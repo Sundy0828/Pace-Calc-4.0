@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Hockey app manager
+        //BITHockeyManager.sharedHockeyManager().configureWithIdentifier("0036c1dbfb6741d1960c062a294a25a1")
+        // Do some additional configuration if needed here
+        //BITHockeyManager.sharedHockeyManager().startManager()
+        //BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation()
+        
         return true
     }
 

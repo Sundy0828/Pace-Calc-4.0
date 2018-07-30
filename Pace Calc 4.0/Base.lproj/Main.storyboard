@@ -35,10 +35,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fq6-is-DHS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="226.66666666666666" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="219.33333333333334" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-fI-3gU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="226.66666666666666" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="219.33333333333334" height="50"/>
                                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.63137254899999995" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                                 <state key="normal" title="Calculate Distance">
@@ -75,8 +75,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="00.00 Miles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz6-6R-cVU">
-                                                        <rect key="frame" x="234.66666666666671" y="0.0" width="92.333333333333343" height="50"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                                        <rect key="frame" x="227.33333333333334" y="0.0" width="99.666666666666657" height="50"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -107,10 +107,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc0-C7-tA4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="246.33333333333334" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="241.33333333333334" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idE-o6-8V2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="246.33333333333334" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="241.33333333333334" height="50"/>
                                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.63137254899999995" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
                                                                 <state key="normal" title="Calculate Time">
@@ -147,8 +147,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkU-e2-8og">
-                                                        <rect key="frame" x="254.33333333333329" y="0.0" width="72.666666666666657" height="50"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                                        <rect key="frame" x="249.33333333333329" y="0.0" width="77.666666666666657" height="50"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -179,10 +179,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fel-0S-KoM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="215.66666666666666" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-mO-axx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="215.66666666666666" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="208" height="50"/>
                                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.63137254899999995" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                                 <state key="normal" title="Calculate Pace">
@@ -220,8 +220,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="00:00:00 /Mi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-Q1-v9J">
-                                                        <rect key="frame" x="223.66666666666666" y="0.0" width="103.33333333333334" height="50"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                                        <rect key="frame" x="216" y="0.0" width="111" height="50"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -929,14 +929,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Lap 1 (200m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wu-C6-Hsl">
-                                                            <rect key="frame" x="0.0" y="0.0" width="228" height="32"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="233" height="32"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmH-IO-047">
-                                                            <rect key="frame" x="228" y="0.0" width="115" height="32"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                            <rect key="frame" x="233" y="0.0" width="110" height="32"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1011,12 +1011,13 @@
             </objects>
             <point key="canvasLocation" x="-892" y="118"/>
         </scene>
-        <!--Clock Lap Split-->
+        <!--Lap Split-->
         <scene sceneID="Kyn-G3-g1E">
             <objects>
-                <tabBarController title="Clock Lap Split" automaticallyAdjustsScrollViewInsets="NO" id="s5G-Yn-FYT" sceneMemberID="viewController">
+                <tabBarController title="Lap Split" automaticallyAdjustsScrollViewInsets="NO" id="s5G-Yn-FYT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="caP-PX-Jnd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1057,27 +1058,24 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mnB-3Y-f3n">
                                                             <rect key="frame" x="0.0" y="0.0" width="345" height="22"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lap 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kp-kC-cK0">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="22"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="45" id="IhR-iS-sj4"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lap 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kp-kC-cK0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="22"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NVH-vb-6Rq">
-                                                                    <rect key="frame" x="53" y="0.0" width="292" height="22"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NVH-vb-6Rq">
+                                                                    <rect key="frame" x="60.666666666666657" y="0.0" width="284.33333333333337" height="22"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55P-Mw-10A">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="142" height="22"/>
-                                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00:00.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55P-Mw-10A">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="138.33333333333334" height="22"/>
+                                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-q6-Huc">
-                                                                            <rect key="frame" x="150" y="0.0" width="142" height="22"/>
-                                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00:00.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-q6-Huc">
+                                                                            <rect key="frame" x="146.33333333333331" y="0.0" width="138" height="22"/>
+                                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -1114,7 +1112,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-j9-IIb">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="102.66666666666667"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="75"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="75"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1127,6 +1125,9 @@
                                                 <state key="normal" title="Lap">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="lapPressed:" destination="MNj-mm-XmX" eventType="touchUpInside" id="itz-0d-Kuh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByB-Zx-8XG">
                                                 <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="45"/>
@@ -1134,6 +1135,9 @@
                                                 <state key="normal" title="Start">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="startPressed:" destination="MNj-mm-XmX" eventType="touchUpInside" id="aE4-ia-vPq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1155,7 +1159,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Clocked Lap Splits" id="fWE-kA-SCf"/>
                     <connections>
+                        <outlet property="lapBtn" destination="TJ9-8i-MAr" id="lO6-fk-78m"/>
+                        <outlet property="startBtn" destination="ByB-Zx-8XG" id="8cq-uQ-awI"/>
                         <outlet property="tableView" destination="ZCc-YO-fLy" id="HxP-rx-7eV"/>
+                        <outlet property="timerLbl" destination="jjI-j9-IIb" id="Ekp-hb-kUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gB7-90-rog" userLabel="First Responder" sceneMemberID="firstResponder"/>

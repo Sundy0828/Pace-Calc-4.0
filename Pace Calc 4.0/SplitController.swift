@@ -175,7 +175,7 @@ class SplitController: UITableViewController {
             cell.timeLbl.textColor = UIColor.black
         }
         let sizeB = CGFloat(Int(20/375*width))
-        let bigFont = UIFont(name: "AvenirNext-Bold", size: sizeB)
+        let bigFont = UIFont(name: "AvenirNext-Regular", size: sizeB)
         
         cell.lapLbl.text = lapArr[indexPath.row]
         cell.timeLbl.text = timeArr[indexPath.row]
